@@ -2,7 +2,9 @@
 
 /* || RESET */
 
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,3 +14,53 @@ img {
     display: block;
 }
 
+/* || GENERAL STYLES */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    width: 100%;
+}
+
+/* || BLOCKS */
+/* aka components */
+
+h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+    color: #222;
+}
+  
+h2 {
+    font-size: 2.6rem;
+    line-height: 3.2rem;
+    color: #222;
+}
+  
+h4 {
+    font-size: 1.2rem;
+    color: #222;
+}
+  
+h6 {
+    font-weight: 700;
+    font-size: 0.7rem;
+}
+  
+p {
+    font-size: 1rem;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+  
+.section-p1 {
+    padding: 40px 80px;
+}
+  
+.section-m1 {
+    margin: 40px 0;
+}
+  
