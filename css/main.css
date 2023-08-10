@@ -38,19 +38,19 @@ textarea {
 /* aka components */
 
 h1 {
-    font-size: 4rem;
-    line-height: 5rem;
+    font-size: 5rem;
+    line-height: 6rem;
     color: #222;
 }
   
 h2 {
-    font-size: 3.6rem;
-    line-height: 4.2rem;
+    font-size: 4rem;
+    line-height: 5.2rem;
     color: #222;
 }
   
 h4 {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     color: #222;
 }
   
@@ -78,6 +78,18 @@ button.normal {
     border-radius: 4px;
     cursor: pointer;
     border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+button.white {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid white;
     outline: none;
     transition: 0.2s;
 }
@@ -171,7 +183,7 @@ header {
     background-repeat: no-repeat;
     cursor: pointer;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 #feature {
@@ -335,4 +347,209 @@ header {
 #banner button:hover {
     background-color: #088178;
     color:white;
+}
+
+#sm-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("../images/banner/b17.jpg");
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    flex: 1;
+}
+
+#sm-banner h4 {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+#sm-banner h2 {
+    color: white;
+    font-size: 1.9rem;
+    font-weight: 800;
+}
+
+#sm-banner span {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#sm-banner .banner-box:hover button{
+    background-color: #088178;
+    border: 1px solid #088178;
+}
+
+#sm-banner .banner-box2 {
+    background-image: url("../images/banner/b10.jpg");
+}
+
+#banner3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#banner3 .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("../images/banner/b7.jpg");
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#banner3 .banner-box2 {
+    background-image: url("../images/banner/b4.jpg");
+}
+
+#banner3 .banner-box3 {
+    background-image: url("../images/banner/b18.jpg");
+}
+
+#banner3 .banner-box h2 {
+    color: white;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+#banner3 .banner-box h3 {
+    color: #ec544e;
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("../images/banner/b14.png");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+
+#newsletter h4 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color:white;
+}
+
+#newsletter p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color:#818ea0;
+}
+
+#newsletter p span{
+    color:#ffbd27;
+}
+
+#newsletter .form {
+    display: flex;
+    width: 35%;
+}
+
+#newsletter input {
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button {
+    background-color: #088178;
+    color:white;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo {
+    margin-bottom: 30px;
+    width: 140px;
+    height: auto;
+}
+
+footer h4 {
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 0.8rem;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+
+footer .follow i {
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img {
+    border: 1px solid #088178;
+    border-radius: 6px;
+}
+
+footer .install img {
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color: #088178;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
 }
